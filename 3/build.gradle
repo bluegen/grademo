@@ -1,0 +1,17 @@
+subprojects {
+
+    group = "ru.mirea.example"
+    version = "0.1"
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_11
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}

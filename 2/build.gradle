@@ -1,0 +1,27 @@
+plugins {
+    id("application")
+}
+
+group = "ru.mirea.example"
+version = "0.1"
+description = "Пример приложения"
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.apache.commons:commons-lang3:3.12.0")
+}
+
+application {
+    mainClass.set("ru.mirea.example.Example2")
+}

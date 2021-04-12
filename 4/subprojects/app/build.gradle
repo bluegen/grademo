@@ -1,0 +1,11 @@
+plugins {
+    id("my-app")
+}
+
+dependencies {
+    implementation(project(":lib"))
+}
+
+application {
+    mainClass.set("ru.mirea.example.app.MyApplication")
+}

@@ -1,0 +1,8 @@
+rootProject.name = "demo3"
+
+include("lib")
+include("app")
+
+for (project in rootProject.children) {
+    project.projectDir = file("subprojects/${project.name}")
+}
