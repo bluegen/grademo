@@ -1,5 +1,7 @@
 subprojects {
 
+    apply(plugin: "java")
+
     group = "ru.mirea.example"
     version = "0.1"
 
